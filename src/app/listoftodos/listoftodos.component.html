@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="../login/login.component.css" />
+
+<div class="container">
+    <div class="addtodo">
+        <input type="text" class="inputtodo" placeholder="Enter item" [(ngModel)]="todo" id="itemtodo">
+        <button (click)="additemtolistoftodos()" onclick="document.getElementById('itemtodo').value = ''">Add</button>
+    </div>
+    <table>
+        <tbody>
+            <tr *ngFor="let todo of listoftodos; let j=index">
+                <td>{{todo}}</td>
+                <td>
+                    <label class="removeitem" (click)="listoftodos.splice(j, 1)" for="x">X</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

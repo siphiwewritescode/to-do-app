@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Login</h1>
+  <form>
+    <!-- <label for="username">Username</label> -->
+    <input type="text" name="username" placeholder="Enter Username" required [(ngModel)]="loginObj.userName">
+
+    <!-- <label for="password">Password</label> -->
+    <input name="password" type="password" placeholder="Enter Password" required [(ngModel)]="loginObj.password">
+    <label class="errormessage" for="name" hidden="false" >The username or password are not correct</label>
+    <button (click)="login()">Login</button>
+    
+    <a routerLink="/signup" routerLinkActive="mat-accent">Create an account, Sign Up</a>
+  </form>
+</div>

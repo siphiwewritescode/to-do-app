@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" href="../login/login.component.css" />
+
+<div class="container" >
+  <h1>Sign Up</h1>
+  <form>
+    <input type="text" name="username" placeholder="Enter Username" required [(ngModel)]="signupObj.userName">
+
+    <input type="email" name="signupObj.email" placeholder="Enter Email" required [(ngModel)]="signupObj.email">
+
+    <input type="password" name="password" placeholder="Enter Password" required [(ngModel)]="signupObj.password">
+        
+    <button (click)="signUp()">Sign Up</button>
+  
+    <a routerLink="/login" routerLinkActive="mat-accent">Already have an account? Login</a>
+  </form>
+</div>

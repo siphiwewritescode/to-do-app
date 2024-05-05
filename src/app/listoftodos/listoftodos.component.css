@@ -1,0 +1,16 @@
+.addtodo{
+    justify-items: center;
+}
+
+.inputtodo{
+    width: 250px;
+}
+
+.removeitem{
+    color: #cc0033;
+    padding-right: 100px;
+}
+
+li{
+    padding-right: 100px;
+}
